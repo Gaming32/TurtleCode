@@ -1,0 +1,29 @@
+speed 9
+
+fd 100
+circle 100 270 5
+setpos 100 0
+seth 0
+rt 90
+bk 300
+home
+
+speed normal
+
+seth -135
+fd 200
+
+dot 50 rgb(0.2,0.2,0.2)
+
+goto -100 100
+
+cap data
+stamp
+nocap
+
+speed slow
+
+goto 500 500
+clearstamp cap::data
+
+wait
